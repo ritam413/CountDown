@@ -29,10 +29,10 @@ console.log(diffinSecoundsTimeInfo);
 
 
 
-  // days.textContent =.days
-  // hours.textContent =.hours
-  // mins.textContent =.mins
-  // sec.textContent =.secs
+  days.textContent =diffinSecoundsTimeInfo.days
+  hours.textContent =diffinSecoundsTimeInfo.hours
+  mins.textContent =diffinSecoundsTimeInfo.min
+  sec.textContent =diffinSecoundsTimeInfo.sec
 
 
 }
