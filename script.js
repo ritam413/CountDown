@@ -1,9 +1,14 @@
 import timeInfo from "./timeInfo.js";
+import dateStringObjectFormatter from './dateStringObjectFormatter.js';
+
 
 function CountDownTimer(){
   
 //Extracting the Time from the Input Field As i am using data-* (that is data-set where set is date we get a String) and we need to convert it into a date using expiredateTime
-  const expiredate = document.getElementById('giveawayDateSpan').dataset.date;
+  const userInput = document.getElementById('userDateInput').value;
+
+  const expiredate = dateStringObjectFormatter(userInput)
+
   const expiredateTime = new Date(expiredate).getTime();
     console.log(expiredateTime);
 
@@ -11,6 +16,7 @@ function CountDownTimer(){
 //we are taking the time right now and converting it into sec
   const timeNow = new Date().getTime();
     console.log(timeNow)
+
 
 
 // we are calculating the difference in sec between the expiredate and today
@@ -27,8 +33,7 @@ console.log(diffinSecoundsTimeInfo);
   const mins = document.getElementById('mins')
   const sec = document.getElementById('sec')
 
-
-
+  
   days.textContent =diffinSecoundsTimeInfo.days
   hours.textContent =diffinSecoundsTimeInfo.hours
   mins.textContent =diffinSecoundsTimeInfo.min
