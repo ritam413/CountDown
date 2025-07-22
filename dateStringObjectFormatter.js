@@ -8,7 +8,7 @@ export default function dateStringObjectFormatter(userInput){
 
 // Convert to ISO Style Date String Format:
 // :- yyyy-mm-ddthh:mm:ss
-    const formattedDateTime = dateObject.   toLocaleString().slice(0,19)
+    const formattedDateTime = dateObject.toLocaleString().slice(0,19)
  
     return formattedDateTime
 }

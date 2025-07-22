@@ -53,29 +53,27 @@
     </div>
 
     <!-- Input Field and Button (Styled) -->
-<div class="w-full mt-8 px-4 flex flex-col items-center gap-4">
-  <label for="userDateInput" class="text-gray-200 font-semibold text-sm">Enter New Giveaway Date:</label>
-  <input 
-    type="datetime-local" 
-    id="userDateInput" 
-    placeholder="e.g. 2025-07-30T11:30:00" 
-    class="w-full max-w-md px-4 py-2 rounded-md border border-gray-600 bg-slate-800 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500"
-  />
+    <div class="w-full mt-8 px-4 flex flex-col items-center gap-4">
+      <label for="userDateInput" class="text-gray-200 font-semibold text-sm">Enter New Giveaway Date:</label>
+      <input type="datetime-local" id="userDateInput" placeholder="e.g. 2025-07-30T11:30:00"
+        class="w-full max-w-md px-4 py-2 rounded-md border border-gray-600 bg-slate-800 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500" />
 
-  <button 
-    id="updateDateBtn"
-    class="px-6 py-2 bg-blue-700 hover:bg-blue-800 text-white rounded-md shadow-md transition duration-300"
-  >
-    Update Giveaway Date
-  </button>
+      <button id="updateDateBtn"
+        class="px-6 py-2 bg-blue-700 hover:bg-blue-800 text-white rounded-md shadow-md transition duration-300">
+        Update Giveaway Date
+      </button>
 
-  <p class="text-sm text-gray-400">Giveaway Ends On: 
-    <span id="giveawayDateSpan" data-date="2025-07-30T11:30:00" class="text-white font-semibold">
-      July 30, 2025 11:30am
-    </span>
-  </p>
-</div>
+      <p class="text-sm text-gray-400">Giveaway Ends On:
+        <span id="giveawayDateSpan" data-date="2025-07-30T11:30:00" class="text-white font-semibold">
+          July 30, 2025 11:30am
+        </span>
+      </p>
+    </div>
   </div>
+
+
+ <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+
   <script src="https://unpkg.com/lucide@latest"></script>
   <script>
     lucide.createIcons()
